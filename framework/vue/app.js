@@ -16,7 +16,6 @@ App.client = options => {
   app.$mount('#app');
 };
 
-
 App.use = component => {
   Vue.use(component);
 };

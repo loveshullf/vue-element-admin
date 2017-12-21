@@ -5,14 +5,14 @@
         <!--用户名-->
         <el-form-item prop="username">
             <span class="svg-container svg-container_login">
-                <icon-svg icon-class="people"/>
+                <icon-svg icon-class="user"/>
             </span>
             <el-input name="username" type="text" placeholder="用户名/邮箱" autoComplete="on" v-model="loginForm.username"></el-input>
         </el-form-item>
         <!--密码-->
         <el-form-item prop="password">
             <span class="svg-container">
-                 <icon-svg icon-class="lock_fill"/>
+                 <icon-svg icon-class="password"/>
             </span>
             <el-input name="password" autoComlite='on' :type="pwdType" v-model='loginForm.password' placeholder="密码">
             </el-input>
@@ -22,7 +22,6 @@
         </el-form-item>
         <!--登录按钮-->
         <el-button type="primary" style="width:100%;margin-bottom:30px;" :loading="loading"  @click.native.prevent='handleLogin'>登录</el-button>
-
         <div class="tips">账号:admin 密码随便填</div>
         <div class="tips">账号:editer 密码随便填</div>
         <el-button class="thirdparty-button" type="primary" @click='showDialog=true'>第三方登录</el-button>
@@ -79,12 +78,12 @@ export default {
             this.loading=true
             this.$store.dispatch('loginByUsername',this.loginForm).then(()=>{
               this.loading=false;
-               console.log('登录成功')
+              console.log('登录成功')
             }).catch(()=>{
               this.loading=false
             })
           }else{
-            console.log('验证错误')
+            console.log('登录错误')
             return false
           }
         })

@@ -1,9 +1,5 @@
 <template>
-  <app-layout>
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
-  </app-layout>
+  <router-view></router-view>
 </template>
 <style lang="scss">
 

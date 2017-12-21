@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "element-ui": "^2.0.8",
+    "js-cookie": "^2.2.0",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
     "vuex": "^2.3.1",
@@ -28,6 +29,7 @@
     "cross-env": "^5.0.1",
     "directory-named-webpack-plugin": "^2.2.3",
     "easywebpack-vue": "^3.2.0",
+    "element-ui": "^2.0.8",
     "eslint": "^3.18.0",
     "eslint-config-eslint": "^4.0.0",
     "eslint-loader": "^1.9.0",
@@ -35,6 +37,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "mocha": "^3.4.2",
+    "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
     "postcss-loader": "^2.0.6",

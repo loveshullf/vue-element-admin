@@ -1,19 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import login from 'page/login';
 Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
       {
         path: '/',
-        component: ListView
-      },
-      {
-        path: '/list',
-        component: ListView
-      },
-      {
-        path: '/detail/:id',
-        component: DetailView
+        component: login
       }
     ]
   });

@@ -1,8 +1,7 @@
 import Vue from 'vue';
-
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import 'normalize.css/normalize.css'
-Vue.use(ElemnetUI);
-
-import 'component/icon-svg'
+import 'mocks';
+import ElementUI from 'element-ui';
+Vue.use(ElementUI);
+import 'element-ui/lib/theme-chalk/index.css';
+import 'normalize.css/normalize.css';
+import 'component/icon-svg';

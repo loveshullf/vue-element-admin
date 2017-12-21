@@ -1,10 +1,11 @@
 'use strict';
 const path = require('path');
 module.exports = {
+  env: 'dev',
   type: 'client',
   framework: 'vue',
   entry: {
-    include: ['page', { 'app/app': 'page/app.js?loader=false' }],
+    include: ['page', { app: 'page/app.js?loader=false' }],
     exclude: ['page/test'],
     template: 'view/layout.html',
     loader: {
@@ -19,7 +20,10 @@ module.exports = {
     component: 'component',
     framework: 'framework',
     store: 'store',
-    utils: 'utils'
+    utils: 'utils',
+    router: 'router',
+    page: 'page',
+    api: 'api'
   },
   options: {},
   loaders: {
@@ -28,7 +32,7 @@ module.exports = {
     stylus: false,
     svgSprite: {
       test: /\.svg$/,
-      include: [path.resolve(__dirname, './web/asset/icons')],
+      include: [path.resolve(__dirname, './asset/icons')],
       use: [
         {
           loader: 'svg-sprite-loader',
@@ -38,7 +42,7 @@ module.exports = {
     },
     urlimage: {
       test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-      exclude: [path.resolve(__dirname, './web/asset/icons')],
+      exclude: [path.resolve(__dirname, './asset/icons')],
       use: [
         {
           loader: 'url-loader',
