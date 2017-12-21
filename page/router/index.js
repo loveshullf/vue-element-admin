@@ -1,0 +1,21 @@
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+const router = new VueRouter({
+    routes: [
+      {
+        path: '/',
+        component: ListView
+      },
+      {
+        path: '/list',
+        component: ListView
+      },
+      {
+        path: '/detail/:id',
+        component: DetailView
+      }
+    ]
+  });
+  
+  export default router;
