@@ -78,7 +78,7 @@ export default {
             this.loading=true
             this.$store.dispatch('loginByUsername',this.loginForm).then(()=>{
               this.loading=false;
-              console.log('登录成功')
+              
             }).catch(()=>{
               this.loading=false
             })

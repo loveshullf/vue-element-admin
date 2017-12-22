@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 module.exports = {
-  env: 'dev',
+  env: 'test',
   type: 'client',
   framework: 'vue',
   entry: {
@@ -23,6 +23,7 @@ module.exports = {
     utils: 'utils',
     router: 'router',
     page: 'page',
+    icons: 'icons',
     api: 'api'
   },
   options: {},

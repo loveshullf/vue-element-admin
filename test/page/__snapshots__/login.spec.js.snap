@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should have the expected html structure 1`] = `
+<div
+  class="login-container"
+>
+  <form
+    autocomplete="on"
+    class="el-form card-box login-form el-form--label-left"
+  >
+    <h3
+      class="title"
+    >
+      系统登录
+    </h3>
+     
+    <div
+      class="el-form-item is-required"
+    >
+      <!---->
+      <div
+        class="el-form-item__content"
+      >
+        <span
+          class="svg-container svg-container_login"
+        >
+          <icon-svg
+            icon-class="user"
+          />
+        </span>
+         
+        <div
+          class="el-input"
+        >
+          <!---->
+          <input
+            autocomplete="on"
+            class="el-input__inner"
+            name="username"
+            placeholder="用户名/邮箱"
+            rows="2"
+            type="text"
+            validateevent="true"
+          />
+          <!---->
+          <!---->
+          <!---->
+        </div>
+        <!---->
+      </div>
+    </div>
+     
+    <div
+      class="el-form-item is-required"
+    >
+      <!---->
+      <div
+        class="el-form-item__content"
+      >
+        <span
+          class="svg-container"
+        >
+          <icon-svg
+            icon-class="password"
+          />
+        </span>
+         
+        <div
+          autocomlite="on"
+          class="el-input"
+        >
+          <!---->
+          <input
+            autocomplete="off"
+            class="el-input__inner"
+            name="password"
+            placeholder="密码"
+            rows="2"
+            type="password"
+            validateevent="true"
+          />
+          <!---->
+          <!---->
+          <!---->
+        </div>
+         
+        <span
+          class="show-pwd"
+        >
+          <icon-svg
+            icon-class="eye"
+          />
+        </span>
+        <!---->
+      </div>
+    </div>
+     
+    <button
+      class="el-button el-button--primary"
+      style="width: 100%; margin-bottom: 30px;"
+      type="button"
+    >
+      <!---->
+      <!---->
+      <span>
+        登录
+      </span>
+    </button>
+     
+    <div
+      class="tips"
+    >
+      账号:admin 密码随便填
+    </div>
+     
+    <div
+      class="tips"
+    >
+      账号:editer 密码随便填
+    </div>
+     
+    <button
+      class="el-button thirdparty-button el-button--primary"
+      type="button"
+    >
+      <!---->
+      <!---->
+      <span>
+        第三方登录
+      </span>
+    </button>
+     
+    <div
+      class="el-dialog__wrapper"
+      style="display: none;"
+    >
+      <div
+        class="el-dialog"
+      >
+        <div
+          class="el-dialog__header"
+        >
+          <span
+            class="el-dialog__title"
+          >
+            第三方验证
+          </span>
+          <button
+            aria-label="Close"
+            class="el-dialog__headerbtn"
+            type="button"
+          >
+            <i
+              class="el-dialog__close el-icon el-icon-close"
+            />
+          </button>
+        </div>
+        <!---->
+        <!---->
+      </div>
+    </div>
+  </form>
+</div>
+`;
