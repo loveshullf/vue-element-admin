@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 module.exports = {
-  env: 'test',
+  env: 'prod',
   type: 'client',
   framework: 'vue',
   entry: {
@@ -15,16 +15,7 @@ module.exports = {
   alias: {
     client: 'framework/vue/entry/client.js',
     app: 'framework/vue/app.js',
-    asset: 'asset',
-    mocks: 'mocks',
-    component: 'component',
-    framework: 'framework',
-    store: 'store',
-    utils: 'utils',
-    router: 'router',
-    page: 'page',
-    icons: 'icons',
-    api: 'api'
+    '@': './'
   },
   options: {},
   loaders: {

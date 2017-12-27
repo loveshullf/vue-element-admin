@@ -32,7 +32,7 @@
 </div>
 </template>
 <script type="text/babel">
-import {isValidUsername}  from 'utils/validate';
+import {isValidUsername}  from '@/utils/validate';
 export default {
     name:'login',
     data(){
@@ -76,14 +76,12 @@ export default {
         this.$refs.loginForm.validate(valid=>{
           if (valid){
             this.loading=true
-            this.$store.dispatch('loginByUsername',this.loginForm).then(()=>{
+            this.$store.dispatch('LoginByUsername',this.loginForm).then(()=>{
               this.loading=false;
-              
             }).catch(()=>{
               this.loading=false
             })
           }else{
-            console.log('登录错误')
             return false
           }
         })

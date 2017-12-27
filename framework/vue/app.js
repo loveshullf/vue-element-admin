@@ -23,6 +23,4 @@ App.use = component => {
 App.component = (name, component) => {
   Vue.component(name, component);
 };
-
-
 export default App;

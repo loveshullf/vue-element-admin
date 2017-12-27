@@ -1,6 +1,6 @@
 'use strict';
-import { login, logout, getUserInfo } from 'api/login'
-import { getToken, setToken, removeToken } from 'utils/auth'
+import { login, logout, getUserInfo } from '@/api/login'
+import { getToken, setToken, removeToken } from '@/utils/auth'
 
 const user = {
   state: {
@@ -46,14 +46,14 @@ const user = {
 
   actions: {
     // 用户名登录
-    loginByUsername({ commit }, userInfo) {
+    LoginByUsername({ commit }, userInfo) {
       const username = userInfo.username.trim()
       return new Promise((resolve, reject) => {
         login(username, userInfo.password).then(response => {
           const data = response.data
           commit('SET_TOKEN', data.token)
           setToken(response.data.token)
-          resolve()
+          resolve(data)
         }).catch(error => {
           reject(error)
         })

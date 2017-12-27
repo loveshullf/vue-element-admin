@@ -1,12 +1,17 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import login from 'page/login';
+import login from '@/page/login';
+import layout from '@/page/layout';
 Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
       {
-        path: '/',
+        path: '/login',
         component: login
+      },
+      {
+        path: '/',
+        component: layout
       }
     ]
   });

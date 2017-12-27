@@ -1,7 +1,8 @@
 
 export function isValidUsername(str) {
-  const valid_map = ['admin', 'editor']
-  return valid_map.indexOf(str.trim()) >= 0
+  //用户名正则，4到16位（字母，数字，下划线，减号）
+  var userregex = /^[a-zA-Z0-9_-]{4,16}$/;
+  return userregex.test(str);
 }
 
 /* 合法uri*/

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { Message } from 'element-ui'
-import store from 'store/app'
-import { getToken } from 'utils/auth'
+import store from '@/store/app'
+import { getToken } from '@/utils/auth'
 
 // 创建axios实例
 const service = axios.create({
@@ -33,7 +33,7 @@ service.interceptors.response.use(
   //       Message({
   //         message: res.message,
   //         type: 'error',
-  //         duration: 5 * 1000
+  //         duration:  * 1000
   //       });
   //       // 50008:非法的token; 50012:其他客户端登录了;  50014:Token 过期了;
   //       if (res.code === 50008 || res.code === 50012 || res.code === 50014) {
@@ -52,7 +52,7 @@ service.interceptors.response.use(
   //       return response.data;
   //     }
   error => {
-    console.log('err' + error)// for debug
+    console.log(error)// for debug
     Message({
       message: error.message,
       type: 'error',
