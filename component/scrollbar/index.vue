@@ -52,6 +52,7 @@ export default {
   .scroll-wrapper{
     position: absolute;
     width:100% !important;
+    background-color: #304156;
   }
 }
 </style>
