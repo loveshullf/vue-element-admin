@@ -6,7 +6,7 @@
   // name: state => state.user.name,
   // introduction: state => state.user.introduction,
   // status: state => state.user.status,
-  // roles: state => state.user.roles,
+ 
   // setting: state => state.user.setting,
   // addRouters: state => state.permission.addRouters,
   // errorLogs: state => state.errorLog.logs
@@ -15,5 +15,6 @@ const getters = {
   permission_routers:state => state.permission.routers,
   visitedViews: state => state.tagsView.visitedViews,
   cachedViews: state => state.tagsView.cachedViews,
+  roles: state => state.user.roles
 }
 export default getters

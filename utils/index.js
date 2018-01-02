@@ -209,7 +209,12 @@ export function getTime(type) {
     return new Date(new Date().toDateString())
   }
 }
-
+/**
+ * 去抖动函数
+ * @param {*} func 
+ * @param {*} wait 
+ * @param {*} immediate 
+ */
 export function debounce(func, wait, immediate) {
   let timeout, args, context, timestamp, result
 
@@ -244,7 +249,10 @@ export function debounce(func, wait, immediate) {
     return result
   }
 }
-
+/**
+ * 深拷贝
+ * @param {*} source 
+ */
 export function deepClone(source) {
   if (!source && typeof source !== 'object') {
     throw new Error('error arguments', 'shallowClone')
