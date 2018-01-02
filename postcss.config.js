@@ -1,4 +1,8 @@
 'use strict';
 
-module.exports = {};
+module.exports = {
+  plugins: {
+    autoprefixer: {}
+  }
+};
 

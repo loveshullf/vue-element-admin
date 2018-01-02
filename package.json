@@ -11,6 +11,7 @@
     "axios": "^0.16.2",
     "element-ui": "^2.0.8",
     "js-cookie": "^2.2.0",
+    "screenfull": "^3.3.2",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
     "vuex": "^2.3.1",
@@ -64,7 +65,7 @@
     "start": "cross-env easywebpack start",
     "lint": "eslint .",
     "fix": "eslint --fix .",
-    "test": "cross-env NODE_ENV=test jest --forceExit",
+    "test": "cross-env jest --forceExit",
     "ci": "npm run lint && npm run cov",
     "ii": "npm install --registry https://registry.npm.taobao.org"
   },

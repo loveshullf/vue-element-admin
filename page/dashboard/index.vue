@@ -1,12 +1,12 @@
 /*
  * @Author: loveshullf 
- * @Date: 2017-12-23 12:13:19 
+ * @Date: 2017-12-28 11:20:09 
  * @Last Modified by: loveshullf
- * @Last Modified time: 2017-12-23 12:15:15
+ * @Last Modified time: 2018-01-02 11:34:13
  */
-<!-- 主面板 -->
+<!--  -->
 <template>
-  <div>主面板</div>
+  <div>dashboarddashboarddashboarddashboarddashboard</div>
 </template>
 
 <script type='text/babel'>
@@ -14,15 +14,7 @@ export default {
   data () {
     return {
     };
-  },
-
-  components: {},
-
-  computed: {},
-
-  mounted: {},
-
-  methods: {}
+  }
 }
 
 </script>

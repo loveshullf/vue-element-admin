@@ -1,3 +1,10 @@
+/*
+ * @Author: loveshullf 
+ * @Date: 2018-01-02 10:50:40 
+ * @Last Modified by: loveshullf
+ * @Last Modified time: 2018-01-02 10:51:39
+ * 目标视图，tab视图 ：可见视图，缓存视图
+ */
 const tagsView = {
   state: {
     visitedViews: [],

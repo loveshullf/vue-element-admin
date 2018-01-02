@@ -2,49 +2,49 @@
  * @Author: loveshullf 
  * @Date: 2017-12-23 11:57:22 
  * @Last Modified by: loveshullf
- * @Last Modified time: 2017-12-25 11:48:55
+ * @Last Modified time: 2018-01-02 15:19:53
  */
 <!--  -->
 <template>
-  <div class="app-wrapper">
-      <sidebar></sidebar>
+  <div class="app-wrapper" :class="{hideSidebar:!sidebar.opened}">
+      <sidebar class="sidebar-container"></sidebar>
       <div class="main-container">
           <navbar></navbar>
-          <app-main></app-main>
+          <tags-view></tags-view>
+          <app-main></app-main> 
       </div>
   </div>
 </template>
 
 <script type='text/babel'>
-import Sidebar from './sidebar';
-import Navbar from './navbar';
-import AppMain from './main';
+import { mapGetters } from "vuex";
+import Sidebar from "./sidebar";
+import Navbar from "./navbar";
+import AppMain from "./appMain";
+import TagsView from "./tagsView";
 export default {
-  data () {
-    return {
-    };
+  data() {
+    return {};
   },
-
   components: {
-      Sidebar,
-      Navbar,
-      AppMain
+    Sidebar,
+    Navbar,
+    AppMain,
+    TagsView
   },
-
-  computed: {},
-
-  mounted: {},
-
-  methods: {}
-}
-
+  computed: {
+    sidebar() {
+      return this.$store.state.app.sidebar;
+    }
+  }
+};
 </script>
 <style rel='stylesheet/scss' lang='scss' scoped>
-@import 'asset/style/mixin.scss';
-.app-wrapper{
+@import "asset/style/mixin.scss";
+.app-wrapper {
   @include clearfix;
   position: relative;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 </style>

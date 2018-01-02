@@ -9,7 +9,6 @@ App.init = options => {
   return App.client(options);
 };
 
-
 App.client = options => {
   Vue.prototype.$http = require('axios');
   const app = new Vue(options);

@@ -5,19 +5,19 @@
         <!--用户名-->
         <el-form-item prop="username">
             <span class="svg-container svg-container_login">
-                <icon-svg icon-class="user"/>
+                <svg-icon svg-name="user"/>
             </span>
             <el-input name="username" type="text" placeholder="用户名/邮箱" autoComplete="on" v-model="loginForm.username"></el-input>
         </el-form-item>
         <!--密码-->
         <el-form-item prop="password">
             <span class="svg-container">
-                 <icon-svg icon-class="password"/>
+                 <svg-icon svg-name="password"/>
             </span>
             <el-input name="password" autoComlite='on' :type="pwdType" v-model='loginForm.password' placeholder="密码">
             </el-input>
             <span class="show-pwd" @click='showPwd'>
-              <icon-svg icon-class="eye"/>
+              <svg-icon svg-name="eye"/>
             </span>
         </el-form-item>
         <!--登录按钮-->
@@ -78,6 +78,7 @@ export default {
             this.loading=true
             this.$store.dispatch('LoginByUsername',this.loginForm).then(()=>{
               this.loading=false;
+              this.$router.push({ path: '/' })
             }).catch(()=>{
               this.loading=false
             })
